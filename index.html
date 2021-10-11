@@ -20,6 +20,8 @@
     />
     <link rel="stylesheet" href="./assets/CSS/base.css" />
     <link rel="stylesheet" href="./assets/CSS/main.css" />
+    <link rel="stylesheet" href="./assets/CSS/grip.css" />
+    <link rel="stylesheet" href="./assets/CSS/reponsive.css" />
     <link
       rel="stylesheet"
       href="./assets/fonds/fontawesome-free-5.15.4-web/css/all.css"
@@ -29,279 +31,368 @@
     <div class="main">
       <header class="header">
         <div class="header__navbar-contaner">
-          <nav class="header__navbar grip">
-            <ul class="navbar__item">
+          <div class="grid wide">
+            <nav class="header__navbar">
+              <ul class="navbar__item">
+                <li
+                  class="
+                    navbar__item-list
+                    navbar__item-list--has-qr
+                    navbar__item-list--border-right
+                    hide-on-mobile-table
+                  "
+                >
+                  Tải ứng dụng Mỹ Phẩm Ohui - LG Vina
+                  <a href="" class="navbar__item-list-app">
+                    <img
+                      src="./assets/img/aHR0cDovL2h5cGVydXJsLmNvL215b2h1aQ.png"
+                      alt=""
+                      class="navbar__item-list-app-qr"
+                    />
+                    <img
+                      src="./assets/img/f014ef6b544459bf2463167d3226851f.png"
+                      alt=""
+                      class="navbar__item-list-app-img"
+                    />
+                    <img
+                      src="./assets/img/02b83d7c975e2830effa5fdf2045095c.png"
+                      alt=""
+                      class="navbar__item-list-app-img"
+                    />
+                  </a>
+                </li>
+                <li class="navbar__item-list navbar__item-list--border-right">
+                  <a href="tel:0965866851" class="navbar__item-list-link"
+                    ><i class="fas fa-phone-alt"></i> 0965866851</a
+                  >
+                </li>
+                <li class="navbar__item-list">
+                  <a
+                    href="mailto:ohuivina.com@gmail.com"
+                    class="navbar__item-list-link"
+                    ><i class="fas fa-envelope"></i> ohuivina.com@gmail.com</a
+                  >
+                </li>
+              </ul>
+
+              <ul class="navbar__item hide-on-mobile-table">
+                <li
+                  class="navbar__item-list navbar__item-list-link--has-notify"
+                >
+                  <a
+                    href=""
+                    class="
+                      navbar__item-list-link navbar__item-list-link--strong
+                    "
+                    ><i class="far fa-bell navbar__item-list-link-icon"></i>
+                    Thông Báo
+                  </a>
+
+                  <div class="navbar__notify">
+                    <header class="navbar__notify-header">
+                      Tin Tức Mới Nhất
+                    </header>
+                    <a href="" class="navbar__notify-body">
+                      <img
+                        src="./assets/img/myphamohui-lgvina.png"
+                        alt=""
+                        class="navbar__notify-img"
+                      />
+                      <p class="navbar__notify-content">
+                        Khi cushion cũng có thể khiến bạn hạnh phúc !
+                      </p>
+                    </a>
+                    <a href="" class="navbar__notify-body">
+                      <img
+                        src="https://img.abaha.vn/photos/resized/300x200/83-1625652146-myphamohui-lgvina.png"
+                        alt=""
+                        class="navbar__notify-img"
+                      />
+                      <p class="navbar__notify-content">
+                        Bí mật của O HUI - Không chỉ ở công nghệ!
+                      </p>
+                    </a>
+                    <a href="" class="navbar__notify-body">
+                      <img
+                        src="https://img.abaha.vn/photos/resized/300x200/83-1622349057-myphamohui-lgvina.png"
+                        alt=""
+                        class="navbar__notify-img"
+                      />
+                      <p class="navbar__notify-content">
+                        CÁC BƯỚC DƯỠNG DA CƠ BẢN
+                      </p>
+                    </a>
+                    <a href="" class="navbar__notify-body">
+                      <img
+                        src="https://img.abaha.vn/photos/resized/300x200/83-1621502156-myphamohui-lgvina.png"
+                        alt=""
+                        class="navbar__notify-img"
+                      />
+                      <p class="navbar__notify-content">
+                        Thông báo thay đổi tem nhãn
+                      </p>
+                    </a>
+                    <a href="" class="navbar__notify-body">
+                      <img
+                        src="https://img.abaha.vn/photos/resized/300x200/83-1580794352-myphamohui-lgvina.png"
+                        alt=""
+                        class="navbar__notify-img"
+                      />
+                      <p class="navbar__notify-content">
+                        Xác thực chính hãng nguồn gốc các sản phẩm Ohui
+                      </p>
+                    </a>
+                    <a href="" class="navbar__notify-footer">Xem tất cả</a>
+                  </div>
+                </li>
+                <li class="navbar__item-list">
+                  <a
+                    href=""
+                    class="
+                      navbar__item-list-link navbar__item-list-link--strong
+                    "
+                    ><i
+                      class="far fa-question-circle navbar__item-list-link-icon"
+                    ></i>
+                    Hỗ trợ</a
+                  >
+                </li>
+                <li class="navbar__item-list navbar__item-list--border-right">
+                  <a
+                    href=""
+                    class="
+                      navbar__item-list-link navbar__item-list-link--strong
+                    "
+                    >Đăng kí</a
+                  >
+                </li>
+                <li class="navbar__item-list">
+                  <a
+                    href=""
+                    class="
+                      navbar__item-list-link navbar__item-list-link--strong
+                    "
+                    >Đăng nhập</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="grid wide">
+          <div class="header__body">
+            <label
+              for="header__search-mobile-checkbox"
+              class="header__search-mobile"
+            >
+              <i class="fas fa-search header__search-mobile-icon"></i>
+            </label>
+            <a href="#" class="header__logo">
+              <img
+                src="./assets/img/logo.png"
+                alt="logo"
+                class="header__logo-img"
+              />
+            </a>
+            <input type="checkbox" hidden id="header__search-mobile-checkbox" />
+            <div class="header__search">
+              <div class="header__search-input-contaner">
+                <input
+                  type="text"
+                  placeholder="Tìm kiếm..."
+                  class="header__search-input"
+                />
+                <div class="header__search-history">
+                  <h3 class="header__search-history-heading">
+                    Lịch sử tìm kiếm
+                  </h3>
+                  <ul class="header__search-history-list">
+                    <li class="header__search-history-item">
+                      <a href="">thuoc tri mun</a>
+                    </li>
+                    <li class="header__search-history-item">
+                      <a href="">thuoc cham soc da</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="header__search-location">
+                <div class="header__search-location-label">
+                  <span>Toàn bộ cửa hàng</span>
+                </div>
+                <i class="header__search-location-icon fas fa-chevron-down"></i>
+                <div class="header__search-selection">
+                  <ul class="header__search-selection-list">
+                    <li class="header__search-selection-item">
+                      <span>Toàn bộ cửa hàng</span>
+                      <i class="fas fa-check"></i>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <button class="header__search-btn">
+                <i class="header__search-btn-icon fas fa-search"></i>
+              </button>
+            </div>
+
+            <div class="header__cart">
+              <div class="header__cart-waper">
+                <i class="header__cart-icon fas fa-shopping-cart"></i>
+                <span class="header__cart-icon-qlt">3</span>
+                <!-- class cart empty "header__cart-list--no-cart" -->
+                <div class="header__cart-list">
+                  <img
+                    src="./assets/img/no-cart.png"
+                    alt=""
+                    class="header__cart-list--no-cart-img"
+                  />
+                  <span class="header__cart-list--no-cart-lable"
+                    >Chưa có sản phẩm</span
+                  >
+                  <h4 class="header__cart-list-head">Sản Phẩm Đã Thêm</h4>
+                  <ul class="header__cart-list-item">
+                    <li class="header__cart-item">
+                      <img
+                        src="https://img.abaha.vn/photos/resized/320x/83-1618642699-myphamohui-lgvina.png"
+                        alt=""
+                        class="header__cart-item-img"
+                      />
+                      <div class="header__cart-item-notify">
+                        <div class="header__cart-item-header">
+                          <div class="header__cart-item-lable">
+                            Kem lót nâng tông Ohui Make
+                          </div>
+                          <div class="header__cart-item-price-waper">
+                            <span class="header__cart-item-price"
+                              >900.000đ</span
+                            >
+                            <span class="header__cart-item-multiply">x</span>
+                            <span class="header__cart-item-quality">2</span>
+                          </div>
+                        </div>
+                        <div class="header__cart-item-delete-waper">
+                          <span class="header__cart-item-delete">Xóa</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="header__cart-item">
+                      <img
+                        src="https://img.abaha.vn/photos/resized/1024x/73-1574413855-myohui.png"
+                        alt=""
+                        class="header__cart-item-img"
+                      />
+                      <div class="header__cart-item-notify">
+                        <div class="header__cart-item-header">
+                          <span class="header__cart-item-lable"
+                            >Set dưỡng trắng trị nám Whoo</span
+                          >
+                          <div class="header__cart-item-price-waper">
+                            <span class="header__cart-item-price"
+                              >400.000đ</span
+                            >
+                            <span class="header__cart-item-multiply">x</span>
+                            <span class="header__cart-item-quality">1</span>
+                          </div>
+                        </div>
+                        <div class="header__cart-item-delete-waper">
+                          <span class="header__cart-item-delete">Xóa</span>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="header__cart-list-total-waper">
+                    <div class="header__cart-list-total">
+                      <span class="header__cart-list-total-lable"
+                        >Tổng số tiền:</span
+                      >
+                      <span class="header__cart-list-total-lable"
+                        >2.200.000đ</span
+                      >
+                    </div>
+                    <div class="header__cart-list-total">
+                      <span class="header__cart-list-total-lable"
+                        >Ví tích điểm:</span
+                      >
+                      <span class="header__cart-list-total-lable"
+                        >+2.200 điểm</span
+                      >
+                    </div>
+                  </div>
+                  <div class="header__cart-list-btn-waper">
+                    <a href="" class="header__cart-list-btn">Xem Giỏ Hàng</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="home-filtel-mobile-tablet">
+            <ul class="home-filter-mobile-tablet__list">
               <li
                 class="
-                  navbar__item-list
-                  navbar__item-list--has-qr
-                  navbar__item-list--border-right
+                  home-filter-mobile-tablet__item
+                  home-filter-mobile-tablet__item--active
                 "
               >
-                Tải ứng dụng Mỹ Phẩm Ohui - LG Vina
-                <a href="" class="navbar__item-list-app">
-                  <img
-                    src="./assets/img/aHR0cDovL2h5cGVydXJsLmNvL215b2h1aQ.png"
-                    alt=""
-                    class="navbar__item-list-app-qr"
-                  />
-                  <img
-                    src="./assets/img/f014ef6b544459bf2463167d3226851f.png"
-                    alt=""
-                    class="navbar__item-list-app-img"
-                  />
-                  <img
-                    src="./assets/img/02b83d7c975e2830effa5fdf2045095c.png"
-                    alt=""
-                    class="navbar__item-list-app-img"
-                  />
+                <a href="" class="home-filter-mobile-tablet__link">Phổ biến</a>
+              </li>
+              <li class="home-filter-mobile-tablet__item">
+                <a href="" class="home-filter-mobile-tablet__link">Mới Nhất</a>
+              </li>
+              <li class="home-filter-mobile-tablet__item">
+                <a href="" class="home-filter-mobile-tablet__link">Bán chạy</a>
+              </li>
+              <li class="home-filter-mobile-tablet__item">
+                <a href="" class="home-filter-mobile-tablet__link">
+                  <span class="home-filter-mobile-tablet__link-name">Giá</span>
+                  <span class="home-filter-mobile-tablet__link-icon-lable">
+                    <i
+                      class="
+                        fas
+                        fa-caret-up
+                        home-filter-mobile-tablet__link-icon
+                      "
+                    ></i>
+                    <i
+                      class="
+                        fas
+                        fa-caret-down
+                        home-filter-mobile-tablet__link-icon
+                      "
+                    ></i>
+                  </span>
                 </a>
               </li>
-              <li class="navbar__item-list navbar__item-list--border-right">
-                <a href="tel:0965866851" class="navbar__item-list-link"
-                  ><i class="fas fa-phone-alt"></i> 0965866851</a
-                >
-              </li>
-              <li class="navbar__item-list">
-                <a
-                  href="mailto:ohuivina.com@gmail.com"
-                  class="navbar__item-list-link"
-                  ><i class="fas fa-envelope"></i> ohuivina.com@gmail.com</a
-                >
-              </li>
             </ul>
-
-            <ul class="navbar__item">
-              <li class="navbar__item-list navbar__item-list-link--has-notify">
-                <a
-                  href=""
-                  class="navbar__item-list-link navbar__item-list-link--strong"
-                  ><i class="far fa-bell navbar__item-list-link-icon"></i> Thông
-                  Báo
-                </a>
-
-                <div class="navbar__notify">
-                  <header class="navbar__notify-header">
-                    Tin Tức Mới Nhất
-                  </header>
-                  <a href="" class="navbar__notify-body">
-                    <img
-                      src="./assets/img/myphamohui-lgvina.png"
-                      alt=""
-                      class="navbar__notify-img"
-                    />
-                    <p class="navbar__notify-content">
-                      Khi cushion cũng có thể khiến bạn hạnh phúc !
-                    </p>
-                  </a>
-                  <a href="" class="navbar__notify-body">
-                    <img
-                      src="https://img.abaha.vn/photos/resized/300x200/83-1625652146-myphamohui-lgvina.png"
-                      alt=""
-                      class="navbar__notify-img"
-                    />
-                    <p class="navbar__notify-content">
-                      Bí mật của O HUI - Không chỉ ở công nghệ!
-                    </p>
-                  </a>
-                  <a href="" class="navbar__notify-body">
-                    <img
-                      src="https://img.abaha.vn/photos/resized/300x200/83-1622349057-myphamohui-lgvina.png"
-                      alt=""
-                      class="navbar__notify-img"
-                    />
-                    <p class="navbar__notify-content">
-                      CÁC BƯỚC DƯỠNG DA CƠ BẢN
-                    </p>
-                  </a>
-                  <a href="" class="navbar__notify-body">
-                    <img
-                      src="https://img.abaha.vn/photos/resized/300x200/83-1621502156-myphamohui-lgvina.png"
-                      alt=""
-                      class="navbar__notify-img"
-                    />
-                    <p class="navbar__notify-content">
-                      Thông báo thay đổi tem nhãn
-                    </p>
-                  </a>
-                  <a href="" class="navbar__notify-body">
-                    <img
-                      src="https://img.abaha.vn/photos/resized/300x200/83-1580794352-myphamohui-lgvina.png"
-                      alt=""
-                      class="navbar__notify-img"
-                    />
-                    <p class="navbar__notify-content">
-                      Xác thực chính hãng nguồn gốc các sản phẩm Ohui
-                    </p>
-                  </a>
-                  <a href="" class="navbar__notify-footer">Xem tất cả</a>
-                </div>
-              </li>
-              <li class="navbar__item-list">
-                <a
-                  href=""
-                  class="navbar__item-list-link navbar__item-list-link--strong"
-                  ><i
-                    class="far fa-question-circle navbar__item-list-link-icon"
-                  ></i>
-                  Hỗ trợ</a
-                >
-              </li>
-              <li class="navbar__item-list navbar__item-list--border-right">
-                <a
-                  href=""
-                  class="navbar__item-list-link navbar__item-list-link--strong"
-                  >Đăng kí</a
-                >
-              </li>
-              <li class="navbar__item-list">
-                <a
-                  href=""
-                  class="navbar__item-list-link navbar__item-list-link--strong"
-                  >Đăng nhập</a
-                >
-              </li>
-            </ul>
-          </nav>
-        </div>
-
-        <div class="header__body grip">
-          <div class="header__logo">
-            <img
-              src="./assets/img/logo.png"
-              alt="logo"
-              class="header__logo-img"
-            />
-          </div>
-          <div class="header__search">
-            <div class="header__search-input-contaner">
-              <input
-                type="text"
-                placeholder="Tìm kiếm..."
-                class="header__search-input"
-              />
-              <div class="header__search-history">
-                <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
-                <ul class="header__search-history-list">
-                  <li class="header__search-history-item">
-                    <a href="">thuoc tri mun</a>
-                  </li>
-                  <li class="header__search-history-item">
-                    <a href="">thuoc cham soc da</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="header__search-location">
-              <span class="header__search-location-label">
-                Toàn bộ cửa hàng
-              </span>
-              <i class="header__search-location-icon fas fa-chevron-down"></i>
-              <div class="header__search-selection">
-                <ul class="header__search-selection-list">
-                  <li class="header__search-selection-item">
-                    <span>Toàn bộ cửa hàng</span>
-                    <i class="fas fa-check"></i>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <button class="header__search-btn">
-              <i class="header__search-btn-icon fas fa-search"></i>
-            </button>
-          </div>
-          <div class="header__cart">
-            <div class="header__cart-waper">
-              <i class="header__cart-icon fas fa-shopping-cart"></i>
-              <span class="header__cart-icon-qlt">3</span>
-              <!-- class cart empty "header__cart-list--no-cart" -->
-              <div class="header__cart-list">
-                <img
-                  src="./assets/img/no-cart.png"
-                  alt=""
-                  class="header__cart-list--no-cart-img"
-                />
-                <span class="header__cart-list--no-cart-lable"
-                  >Chưa có sản phẩm</span
-                >
-                <h4 class="header__cart-list-head">Sản Phẩm Đã Thêm</h4>
-                <ul class="header__cart-list-item">
-                  <li class="header__cart-item">
-                    <img
-                      src="https://img.abaha.vn/photos/resized/320x/83-1618642699-myphamohui-lgvina.png"
-                      alt=""
-                      class="header__cart-item-img"
-                    />
-                    <div class="header__cart-item-notify">
-                      <div class="header__cart-item-header">
-                        <span class="header__cart-item-lable"
-                          >Kem lót nâng tông Ohui Make</span
-                        >
-                        <div class="header__cart-item-price-waper">
-                          <span class="header__cart-item-price">900.000đ</span>
-                          <span class="header__cart-item-multiply">x</span>
-                          <span class="header__cart-item-quality">2</span>
-                        </div>
-                      </div>
-                      <div class="header__cart-item-delete-waper">
-                        <span class="header__cart-item-delete">Xóa</span>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="header__cart-item">
-                    <img
-                      src="https://img.abaha.vn/photos/resized/1024x/73-1574413855-myohui.png"
-                      alt=""
-                      class="header__cart-item-img"
-                    />
-                    <div class="header__cart-item-notify">
-                      <div class="header__cart-item-header">
-                        <span class="header__cart-item-lable"
-                          >Set dưỡng trắng trị nám Whoo</span
-                        >
-                        <div class="header__cart-item-price-waper">
-                          <span class="header__cart-item-price">400.000đ</span>
-                          <span class="header__cart-item-multiply">x</span>
-                          <span class="header__cart-item-quality">1</span>
-                        </div>
-                      </div>
-                      <div class="header__cart-item-delete-waper">
-                        <span class="header__cart-item-delete">Xóa</span>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-                <div class="header__cart-list-total-waper">
-                  <div class="header__cart-list-total">
-                    <span class="header__cart-list-total-lable"
-                      >Tổng số tiền:</span
-                    >
-                    <span class="header__cart-list-total-lable"
-                      >2.200.000đ</span
-                    >
-                  </div>
-                  <div class="header__cart-list-total">
-                    <span class="header__cart-list-total-lable"
-                      >Ví tích điểm:</span
-                    >
-                    <span class="header__cart-list-total-lable"
-                      >+2.200 điểm</span
-                    >
-                  </div>
-                </div>
-                <div class="header__cart-list-btn-waper">
-                  <a href="" class="header__cart-list-btn">Xem Giỏ Hàng</a>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </header>
 
       <div class="contaner">
-        <div class="grip">
-          <div class="grip__row">
-            <div class="grip__column-2">
+        <div class="grid wide">
+          <ul class="catelory-mobile-tablet">
+            <li class="catelory-mobile-tablet__item">
+              <a href="" class="catelory-mobile-tablet__link">Ohui</a>
+            </li>
+            <li class="catelory-mobile-tablet__item">
+              <a href="" class="catelory-mobile-tablet__link">Whoo</a>
+            </li>
+            <li class="catelory-mobile-tablet__item">
+              <a href="" class="catelory-mobile-tablet__link">Su:m37</a>
+            </li>
+            <li class="catelory-mobile-tablet__item">
+              <a href="" class="catelory-mobile-tablet__link">Set mini</a>
+            </li>
+            <li class="catelory-mobile-tablet__item">
+              <a href="" class="catelory-mobile-tablet__link"
+                >Thực phẩm Chức Năng</a
+              >
+            </li>
+            <li class="catelory-mobile-tablet__item">
+              <a href="" class="catelory-mobile-tablet__link">Dịch vụ</a>
+            </li>
+          </ul>
+          <div class="row">
+            <div class="col l-2 m-0 c-0">
               <div class="catelory">
                 <h3 class="catelory__header">Danh Mục</h3>
                 <ul class="catelory__list">
@@ -486,8 +577,8 @@
                 </ul>
               </div>
             </div>
-            <div class="grip__column-10">
-              <div class="home-filter">
+            <div class="col l-10 m-12 c-12">
+              <div class="home-filter hide-on-mobile-table">
                 <div class="filter__tool">
                   <span class="filter__tool-lable">Sắp xếp theo:</span>
                   <a href="" class="filter__tool-btn filter__tool-btn--active"
@@ -528,9 +619,64 @@
                 </div>
               </div>
               <div class="home-product">
-                <div class="grip__row">
-                  <div class="grip__column-2-4">
-                    <h3 class="footer__heading"></h3>
+                <div class="row sm-gutter">
+                  <div class="col l-2-4 m-4 c-6">
+                    <a href="" class="home-product-item">
+                      <img
+                        src="https://img.abaha.vn/photos/resized/1024x/83-1621760590-myphamohui-lgvina.png"
+                        alt=""
+                        class="home-product-item__img"
+                      />
+                      <div class="home-product-item__body">
+                        <span class="home-product-item__name">
+                          Kem chống nắng dạng sữa dưỡng da trắng mịn Whoo...
+                        </span>
+                        <div class="home-product-item__price">
+                          <span class="home-product-item__price-old"
+                            >1.100.000đ</span
+                          >
+                          <span class="home-product-item__price-new"
+                            >990.000đ</span
+                          >
+                        </div>
+                        <div class="home-product-item__action">
+                          <div
+                            class="
+                              home-product-item__like
+                              home-product-item__like--active
+                            "
+                          >
+                            <i
+                              class="home-product-item__like-no far fa-heart"
+                            ></i>
+                            <i
+                              class="home-product-item__like-yes fas fa-heart"
+                            ></i>
+                          </div>
+                          <div class="home-product-item__rate">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                          </div>
+                          <span class="home-product-item__pnt">4 đã bán</span>
+                        </div>
+                        <div class="home-product-item__origin">
+                          <span class="home-product-item__brand">Whoo</span>
+                          <span class="home-product-item__local">Hàn Quốc</span>
+                        </div>
+                      </div>
+                      <div class="home-product-item__sale-off">
+                        <span class="home-product-item__percent">10%</span>
+                        <span class="home-product-item__lable">GIẢM</span>
+                      </div>
+                      <div class="home-product-item__add-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2-4 m-4 c-6">
                     <a href="" class="home-product-item">
                       <img
                         src="https://img.abaha.vn/photos/resized/1024x/83-1621760590-myphamohui-lgvina.png"
@@ -587,8 +733,7 @@
                       </div>
                     </a>
                   </div>
-                  <div class="grip__column-2-4">
-                    <h3 class="footer__heading"></h3>
+                  <div class="col l-2-4 m-4 c-6">
                     <a href="" class="home-product-item">
                       <img
                         src="https://img.abaha.vn/photos/resized/1024x/83-1621760590-myphamohui-lgvina.png"
@@ -645,66 +790,7 @@
                       </div>
                     </a>
                   </div>
-                  <div class="grip__column-2-4">
-                    <h3 class="footer__heading"></h3>
-                    <a href="" class="home-product-item">
-                      <img
-                        src="https://img.abaha.vn/photos/resized/1024x/83-1621760590-myphamohui-lgvina.png"
-                        alt=""
-                        class="home-product-item__img"
-                      />
-                      <div class="home-product-item__body">
-                        <span class="home-product-item__name"
-                          >Kem chống nắng dạng sữa dưỡng da trắng mịn
-                          Whoo...</span
-                        >
-                        <div class="home-product-item__price">
-                          <span class="home-product-item__price-old"
-                            >1.100.000đ</span
-                          >
-                          <span class="home-product-item__price-new"
-                            >990.000đ</span
-                          >
-                        </div>
-                        <div class="home-product-item__action">
-                          <div
-                            class="
-                              home-product-item__like
-                              home-product-item__like--active
-                            "
-                          >
-                            <i
-                              class="home-product-item__like-no far fa-heart"
-                            ></i>
-                            <i
-                              class="home-product-item__like-yes fas fa-heart"
-                            ></i>
-                          </div>
-                          <div class="home-product-item__rate">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                          </div>
-                          <span class="home-product-item__pnt">4 đã bán</span>
-                        </div>
-                        <div class="home-product-item__origin">
-                          <span class="home-product-item__brand">Whoo</span>
-                          <span class="home-product-item__local">Hàn Quốc</span>
-                        </div>
-                      </div>
-                      <div class="home-product-item__sale-off">
-                        <span class="home-product-item__percent">10%</span>
-                        <span class="home-product-item__lable">GIẢM</span>
-                      </div>
-                      <div class="home-product-item__add-cart">
-                        <i class="fas fa-shopping-cart"></i>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="grip__column-2-4">
-                    <h3 class="footer__heading"></h3>
+                  <div class="col l-2-4 m-4 c-6">
                     <a href="" class="home-product-item">
                       <img
                         src="https://img.abaha.vn/photos/resized/1024x/83-1621760590-myphamohui-lgvina.png"
@@ -761,8 +847,7 @@
                       </div>
                     </a>
                   </div>
-                  <div class="grip__column-2-4">
-                    <h3 class="footer__heading"></h3>
+                  <div class="col l-2-4 m-4 c-6">
                     <a href="" class="home-product-item">
                       <img
                         src="https://img.abaha.vn/photos/resized/1024x/83-1621760590-myphamohui-lgvina.png"
@@ -819,8 +904,7 @@
                       </div>
                     </a>
                   </div>
-                  <div class="grip__column-2-4">
-                    <h3 class="footer__heading"></h3>
+                  <div class="col l-2-4 m-4 c-6">
                     <a href="" class="home-product-item">
                       <img
                         src="https://img.abaha.vn/photos/resized/1024x/83-1621760590-myphamohui-lgvina.png"
@@ -877,8 +961,7 @@
                       </div>
                     </a>
                   </div>
-                  <div class="grip__column-2-4">
-                    <h3 class="footer__heading"></h3>
+                  <div class="col l-2-4 m-4 c-6">
                     <a href="" class="home-product-item">
                       <img
                         src="https://img.abaha.vn/photos/resized/1024x/83-1621760590-myphamohui-lgvina.png"
@@ -935,8 +1018,7 @@
                       </div>
                     </a>
                   </div>
-                  <div class="grip__column-2-4">
-                    <h3 class="footer__heading"></h3>
+                  <div class="col l-2-4 m-4 c-6">
                     <a href="" class="home-product-item">
                       <img
                         src="https://img.abaha.vn/photos/resized/1024x/83-1621760590-myphamohui-lgvina.png"
@@ -993,8 +1075,7 @@
                       </div>
                     </a>
                   </div>
-                  <div class="grip__column-2-4">
-                    <h3 class="footer__heading"></h3>
+                  <div class="col l-2-4 m-4 c-6">
                     <a href="" class="home-product-item">
                       <img
                         src="https://img.abaha.vn/photos/resized/1024x/83-1621760590-myphamohui-lgvina.png"
@@ -1051,8 +1132,7 @@
                       </div>
                     </a>
                   </div>
-                  <div class="grip__column-2-4">
-                    <h3 class="footer__heading"></h3>
+                  <div class="col l-2-4 m-4 c-6">
                     <a href="" class="home-product-item">
                       <img
                         src="https://img.abaha.vn/photos/resized/1024x/83-1621760590-myphamohui-lgvina.png"
@@ -1109,8 +1189,7 @@
                       </div>
                     </a>
                   </div>
-                  <div class="grip__column-2-4">
-                    <h3 class="footer__heading"></h3>
+                  <div class="col l-2-4 m-4 c-6">
                     <a href="" class="home-product-item">
                       <img
                         src="https://img.abaha.vn/photos/resized/1024x/83-1621760590-myphamohui-lgvina.png"
@@ -1167,8 +1246,7 @@
                       </div>
                     </a>
                   </div>
-                  <div class="grip__column-2-4">
-                    <h3 class="footer__heading"></h3>
+                  <div class="col l-2-4 m-4 c-6">
                     <a href="" class="home-product-item">
                       <img
                         src="https://img.abaha.vn/photos/resized/1024x/83-1621760590-myphamohui-lgvina.png"
@@ -1225,8 +1303,7 @@
                       </div>
                     </a>
                   </div>
-                  <div class="grip__column-2-4">
-                    <h3 class="footer__heading"></h3>
+                  <div class="col l-2-4 m-4 c-6">
                     <a href="" class="home-product-item">
                       <img
                         src="https://img.abaha.vn/photos/resized/1024x/83-1621760590-myphamohui-lgvina.png"
@@ -1283,8 +1360,7 @@
                       </div>
                     </a>
                   </div>
-                  <div class="grip__column-2-4">
-                    <h3 class="footer__heading"></h3>
+                  <div class="col l-2-4 m-4 c-6">
                     <a href="" class="home-product-item">
                       <img
                         src="https://img.abaha.vn/photos/resized/1024x/83-1621760590-myphamohui-lgvina.png"
@@ -1341,8 +1417,7 @@
                       </div>
                     </a>
                   </div>
-                  <div class="grip__column-2-4">
-                    <h3 class="footer__heading"></h3>
+                  <div class="col l-2-4 m-4 c-6">
                     <a href="" class="home-product-item">
                       <img
                         src="https://img.abaha.vn/photos/resized/1024x/83-1621760590-myphamohui-lgvina.png"
@@ -1437,9 +1512,9 @@
       </div>
 
       <footer class="footer">
-        <div class="grip">
-          <div class="grip__row footer__menu-contaner">
-            <div class="grip__column-2-4 footer__column">
+        <div class="grid wide">
+          <div class="row footer__menu-contaner">
+            <div class="col l-2-4 m-6 c-6 footer__column">
               <h3 class="footer__heading">CHĂM SÓC KHÁCH HÀNG</h3>
               <ul class="footer__list">
                 <li class="footer__list-item">
@@ -1453,7 +1528,7 @@
                 </li>
               </ul>
             </div>
-            <div class="grip__column-2-4 footer__column">
+            <div class="col l-2-4 m-6 c-6 footer__column">
               <h3 class="footer__heading">VỀ CHÚNG TÔI</h3>
               <ul class="footer__list">
                 <li class="footer__list-item">
@@ -1469,8 +1544,8 @@
                 </li>
               </ul>
             </div>
-            <div class="grip__column-2-4 footer__column"></div>
-            <div class="grip__column-2-4 footer__column">
+            <div class="col l-2-4 m-0 c-0 footer__column"></div>
+            <div class="col l-2-4 m-6 c-6 footer__column">
               <h3 class="footer__heading">THEO DÕI CHÚNG TÔI</h3>
               <ul class="footer__list">
                 <li class="footer__list-item">
@@ -1481,7 +1556,7 @@
                 </li>
               </ul>
             </div>
-            <div class="grip__column-2-4 footer__column">
+            <div class="col l-2-4 m-6 c-6 footer__column">
               <h3 class="footer__heading">ĐI TỚI CỬA HÀNG CHÚNG TÔI</h3>
               <a href="" class="footer__app-link">
                 <img
@@ -1504,8 +1579,8 @@
               </a>
             </div>
           </div>
-          <div class="grip__row">
-            <p class="footer__athor">Copyright By Phan Huy</p>
+          <div class="row">
+            <p class="footer__athor">Cover By Phan Huy</p>
             <span class="footer__src">
               Source at:
               <a href="https://ohuivina.com/all">https://ohuivina.com/all </a>

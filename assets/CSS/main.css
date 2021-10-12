@@ -643,6 +643,7 @@
   display: flex;
   width: 100%;
   justify-content: center;
+  position: relative;
 }
 .home-filter-mobile-tablet__link-icon-lable {
   display: flex;
